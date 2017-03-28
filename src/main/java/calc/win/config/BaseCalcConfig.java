@@ -7,8 +7,8 @@ public class BaseCalcConfig {
 
     /*DIGITS BUTTONS*/
     public static final String ZERO_BUTTON = "";
-    public static final String ONE_BUTTON = "";
-    public static final String TWO_BUTTON = "";
+    public static final String ONE_BUTTON = "src/main/resources/DIGITS_BUTTONS/1.PNG";
+    public static final String TWO_BUTTON = "src/main/resources/DIGITS_BUTTONS/2.PNG";
     public static final String THREE_BUTTON = "";
     public static final String FORTH_BUTTON = "";
     public static final String FIVE_BUTTON = "";
@@ -31,12 +31,13 @@ public class BaseCalcConfig {
     public static final String SQUARE_ROOT_BUTTON = "";
     public static final String MODULE_BUTTON = "";
     public static final String DIVIDED_BUTTON = "";
-    public static final String PLUS_BUTTON = "";
+    public static final String PLUS_BUTTON = "src/main/resources/DIGITS_BUTTONS/+.PNG";
     public static final String MINUS_BUTTON = "";
     public static final String MULTIPLY_BUTTON = "";
     public static final String RECIPROCAL_BUTTON = "";
-    public static final String RESULT_BUTTON = "";
-
+    public static final String RESULT_BUTTON = "src/main/resources/DIGITS_BUTTONS/=.PNG";
+    /*EXPECTED RESULTS*/
+    public static final String ONE_PLUS_THREE = "C:\\sources\\MyCode\\wincalctest\\src\\test\\resources\\EXPECTED_RESULTS\\1+2=3.PNG";
 
     private BaseCalcConfig() {
     }

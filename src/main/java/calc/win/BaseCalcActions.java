@@ -1,8 +1,9 @@
 package calc.win;
 
 import calc.win.config.BaseCalcConfig;
-import org.sikuli.api.Screen;
+import org.sikuli.script.FindFailed;
 import org.sikuli.script.Pattern;
+import org.sikuli.script.Screen;
 
 
 /**
@@ -44,7 +45,83 @@ public class BaseCalcActions {
     private Pattern result = new Pattern(BaseCalcConfig.RESULT_BUTTON);
 
 
-    BaseCalcActions(Screen builder) {
+    public BaseCalcActions(Screen builder) {
         this.builder = builder;
+    }
+
+    public void pressZero() throws FindFailed {
+        builder.wait(zero.similar((float) 0.80), 5).click();
+    }
+
+    public void pressOne() throws FindFailed {
+        builder.wait(one.similar((float) 0.80), 5).click();
+    }
+
+    public void pressTwo() throws FindFailed {
+        builder.wait(two.similar((float) 0.80), 5).click();
+    }
+
+    public void pressThree() throws FindFailed {
+        builder.wait(three.similar((float) 0.80), 5).click();
+    }
+
+    public void pressForth() throws FindFailed {
+        builder.wait(forth.similar((float) 0.80), 5).click();
+    }
+
+    public void pressFive() throws FindFailed {
+        builder.wait(five.similar((float) 0.80), 5).click();
+    }
+
+    public void pressSix() throws FindFailed {
+        builder.wait(six.similar((float) 0.80), 5).click();
+    }
+
+    public void pressSeven() throws FindFailed {
+        builder.wait(seven.similar((float) 0.80), 5).click();
+    }
+
+    public void pressEight() throws FindFailed {
+        builder.wait(eight.similar((float) 0.80), 5).click();
+    }
+
+    public void pressNine() throws FindFailed {
+        builder.wait(nine.similar((float) 0.80), 5).click();
+    }
+
+    public void pressMinus() throws FindFailed {
+        builder.wait(minus.similar((float) 0.80), 5).click();
+    }
+
+    public void pressPlus() throws FindFailed {
+        builder.wait(plus.similar((float) 0.80), 5).click();
+    }
+
+    public void pressDivided() throws FindFailed {
+        builder.wait(divided.similar((float) 0.80), 5).click();
+    }
+
+    public void pressMultiply() throws FindFailed {
+        builder.wait(multiply.similar((float) 0.80), 5).click();
+    }
+
+    public void pressModule() throws FindFailed {
+        builder.wait(module.similar((float) 0.80), 5).click();
+    }
+
+    public void pressBackspace() throws FindFailed {
+        builder.wait(backspace.similar((float) 0.80), 5).click();
+    }
+
+    public void pressChangeSign() throws FindFailed {
+        builder.wait(changeSign.similar((float) 0.80), 5).click();
+    }
+
+    public void pressSqrRoot() throws FindFailed {
+        builder.wait(sqrtRoot.similar((float) 0.80), 5).click();
+    }
+
+    public void pressResult() throws FindFailed {
+        builder.wait(result.similar((float) 0.80), 5).click();
     }
 }
